@@ -5,6 +5,7 @@
   import Skills from "./components/Skills.svelte";
   import Input from "./components/Input.svelte";
   import Photos from "./components/photos.svelte";
+import ButtonCount from "./components/ButtonCount.svelte";
 
   export let name;
   export let lastname;
@@ -70,6 +71,7 @@
     mas sabio elegir la felicidad y el amor"
   </h3>
   <About />
+
   <br />
   <img src={sveltLogo} alt="iroh" />
 
@@ -78,6 +80,7 @@
   <Skills />
 
   <Input />
+  <ButtonCount/>
   <Photos />
   <!-- <Person {...data}/>
   <Person name={data.name} lastname={data.lastname} age={data.age} /> -->
