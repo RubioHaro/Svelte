@@ -20,8 +20,15 @@
     color: var(--theme-color);
   }
 
+
   :global(:root) {
     --theme-color: brown;
+  }
+
+
+  :global(body.dark-mode) {
+    background-color: rgb(68, 58, 45);
+    color: tan;
   }
 
   h3 {
