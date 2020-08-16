@@ -3,6 +3,8 @@
   import Text from "./components/Text.svelte";
   import Person from "./components/Person.svelte";
   import Skills from "./components/Skills.svelte";
+  import Input from "./components/Input.svelte";
+  import Photos from "./components/photos.svelte";
 
   export let name;
   export let lastname;
@@ -21,11 +23,9 @@
     color: var(--theme-color);
   }
 
-
   :global(:root) {
     --theme-color: brown;
   }
-
 
   :global(body.dark-mode) {
     background-color: rgb(68, 58, 45);
@@ -74,9 +74,11 @@
   <img src={sveltLogo} alt="iroh" />
 
   <Text content="by Rubio Haro" />
-  
-  <Skills/>
 
+  <Skills />
+
+  <Input />
+  <Photos />
   <!-- <Person {...data}/>
   <Person name={data.name} lastname={data.lastname} age={data.age} /> -->
 
